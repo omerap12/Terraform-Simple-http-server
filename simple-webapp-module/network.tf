@@ -101,4 +101,5 @@ resource "aws_eip" "main-eip" {
   vpc                       = true
   network_interface         = aws_network_interface.main-network-interface.id
   associate_with_private_ip = aws_network_interface.main-network-interface.private_ip
+  depends_on = [ aws_instance.instance ]
 }
