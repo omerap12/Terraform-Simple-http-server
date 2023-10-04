@@ -15,3 +15,14 @@ variable "instance_type" {
   default     = "t2.micro"
   type        = string
 }
+variable "region" {
+  description = "Region of the infrastructure"
+  default = "us-east-1"
+  type = string
+}
+
+variable "availability_zone" {
+  description = "Zone of the infrastructure"
+  default = "us-east-1a"
+  type = string
+}
